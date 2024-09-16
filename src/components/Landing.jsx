@@ -35,7 +35,13 @@ const Landing = () => {
         </div>
         <div>
           <button className="bg-customcolor text-black font-bold px-6 py-2 rounded-lg mt-4 hover:bg-customcolor2 text-sm sm:text-base md:text-lg lg:text-lg">
-            Download Resume
+            <a
+              href="../../Dhaya_Resume.pdf" // Path to your PDF
+              download="Dhaya_Resume.pdf" // Custom name for the file when downloading
+              className="text-white font-bold py-2 px-4 rounded"
+            >
+              Download Resume
+            </a>
           </button>
         </div>
       </div>
