@@ -75,4 +75,6 @@ button:focus-visible {
 .hover{
   @apply   text-black font-bold px-6 py-2 rounded-lg  hover:bg-customcolor2 hover:scale-105 transform transition duration-200 ease-in-out;
 }
-  
+*{
+  background-color: 1b1b1b;
+}
