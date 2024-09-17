@@ -29,9 +29,14 @@ const Header = () => {
     <div className="relative">
       <div className="flex font-bold bg-black items-center p-4 font-poppins sticky top-0 z-10 transition duration-200 ease-linear">
         <div className="flex-1 text-4xl">
-          <h1 className="text-white pl-10">
+          <a
+            className="text-white pl-10 text-3xl"
+            href="https://github.com/DHAYA9687"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Web <span className="text-customcolor">Dev</span>
-          </h1>
+          </a>
         </div>
 
         {/* Desktop menu */}
