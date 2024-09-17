@@ -31,7 +31,7 @@ const Landing = () => {
   return (
     <Element
       name="home"
-      className="relative landing bg-cover bg-no-repeat bg-center h-screen w-full flex flex-col lg:flex-row items-center justify-center lg:justify-between px-10 lg:px-24 md:px-16 sm:px-8"
+      className="relative landing bg-cover bg-no-repeat bg-center h-screen w-full flex flex-col lg:flex-row items-center justify-center lg:justify-between px-10 lg:px-24 md:px-16 sm:px-8 lg:max-w-[80%] mx-auto"
     >
       {/* Right Side Profile Picture */}
       <div className="mt-10 w-64 h-64 lg:w-80 lg:h-80 md:w-56 md:h-56 sm:w-48 sm:h-48 order-1 lg:order-2">
