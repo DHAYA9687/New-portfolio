@@ -42,7 +42,7 @@ const Header = () => {
             duration={1000}
             className="hover hover:cursor-pointer"
           >
-            <h4 className="text-white">Home</h4>
+            <h4 className="text-white">About</h4>
           </Link>
           <Link
             to="techStack"
@@ -96,7 +96,7 @@ const Header = () => {
                 className="text-white hover:border-b-2 border-customcolor hover:cursor-pointer"
                 onClick={() => setIsNavOpen(false)}
               >
-                Home
+                About
               </Link>
             </li>
             <li>
