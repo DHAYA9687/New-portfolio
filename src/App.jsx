@@ -7,7 +7,7 @@ import Projects from "./components/Projects";
 import TechStack from "./components/TechStack";
 function App() {
   return (
-    <div className="bg-gray-900">
+    <div className="bg-gray-900 font-poppins">
       <Header />
       <Landing />
       <TechStack />

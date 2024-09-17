@@ -1,8 +1,33 @@
-// import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Element } from "react-scroll";
+import Typed from "typed.js";
 import img1 from "../assets/profilepic.png";
 import "./Landing.css";
+
 const Landing = () => {
+  // Create a ref to target the typing element
+  const typingRef = useRef(null);
+
+  // Initialize Typed.js inside useEffect to ensure the element exists
+  useEffect(() => {
+    const options = {
+      strings: ["Front-end Developer", "Back-end Developer"],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true,
+      backDelay: 1500,
+      showCursor: true,
+    };
+
+    // Check if the ref exists before initializing Typed.js
+    if (typingRef.current) {
+      const typed = new Typed(typingRef.current, options);
+      return () => {
+        typed.destroy(); // Clean up to prevent memory leaks
+      };
+    }
+  }, []);
+
   return (
     <Element
       name="home"
@@ -24,7 +49,9 @@ const Landing = () => {
           </h1>
         </div>
         <div className="text-white font-semibold pb-2 font-poppins text-xl sm:text-lg md:text-2xl lg:text-3xl">
-          <h1>I'm a Full Stack Developer</h1>
+          <h1>
+            I'm a <span ref={typingRef}></span> {/* Ref used for Typed.js */}
+          </h1>
         </div>
         <div className="text-white italic text-lg sm:text-base md:text-xl lg:text-2xl">
           <h1>I turn my ideas into interactive experiences on the web.</h1>
