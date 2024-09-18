@@ -2,10 +2,8 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
-
 const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
-
   const handleClick = () => {
     setIsNavOpen(!isNavOpen);
     console.log("button clicked");
@@ -40,7 +38,7 @@ const Header = () => {
         </div>
 
         {/* Desktop menu */}
-        <div className="flex-1 hidden md:flex justify-evenly text-white">
+        <div className="flex-1 hidden md:flex justify-evenly text-white ">
           <Link
             to="About"
             smooth={true}
