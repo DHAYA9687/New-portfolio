@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { Element } from "react-scroll";
 import Typed from "typed.js";
-import img1 from "../assets/profilepic.png";
+import img1 from "../assets/dhaya.jpg";
 import "./Landing.css";
 
 const Landing = () => {
