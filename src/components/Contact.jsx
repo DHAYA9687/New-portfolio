@@ -57,12 +57,12 @@ function Contact() {
       <h1 className="text-4xl font-semibold text-center mb-8 md:text-3xl sm:text-2xl">
         Contact
       </h1>
-      <div className="border border-white w-full max-w-lg min-h-[200px] flex flex-col items-center justify-center p-8 mt-5 mx-auto">
-        <p className="text-lg md:text-base sm:text-sm mb-6">
+      <div className="border border-white w-full max-w-lg min-h-[200px] flex flex-col items-center justify-center p-8 mt-5 mx-auto rounded-md">
+        <p className="text-lg md:text-base sm:text-sm mb-6 font-semibold">
           Email:{" "}
-          <span className="text-customcolor">sekarsekar@5016@gmail.com</span>
+          <span className="text-customcolor ">sekarsekar@5017@gmail.com</span>
         </p>
-        <p className="text-lg md:text-base sm:text-sm">
+        <p className="text-lg md:text-base sm:text-sm font-semibold">
           Github username: <span className="text-customcolor">@DHAYA9687</span>
         </p>
         <div className="flex justify-between gap-6 mt-8 mb-2">

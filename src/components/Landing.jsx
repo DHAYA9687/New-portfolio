@@ -30,7 +30,7 @@ const Landing = () => {
 
   return (
     <Element
-      name="home"
+      name="About"
       className="relative landing bg-cover bg-no-repeat bg-center h-screen w-full flex flex-col lg:flex-row items-center justify-center lg:justify-between px-10 lg:px-24 md:px-16 sm:px-8 lg:max-w-[80%] mx-auto"
     >
       {/* Right Side Profile Picture */}

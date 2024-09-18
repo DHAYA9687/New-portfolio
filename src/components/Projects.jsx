@@ -53,7 +53,7 @@ const Projects = () => {
 
   return (
     <Element name="projects">
-      <div className="text-white text-3xl text-center my-[30px">
+      <div className="text-white text-3xl text-center my-[30px] font-bold">
         My Projects
       </div>
       <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

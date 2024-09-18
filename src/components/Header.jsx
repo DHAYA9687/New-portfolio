@@ -26,8 +26,8 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="relative">
-      <div className="flex font-bold bg-black items-center p-4 font-poppins sticky top-0 z-10 transition duration-200 ease-linear">
+    <div className="sticky top-0 z-10">
+      <div className="flex font-bold bg-black items-center p-4 font-poppins transition duration-200 ease-linear">
         <div className="flex-1 text-4xl">
           <a
             className="text-white pl-10 text-3xl"
@@ -42,7 +42,7 @@ const Header = () => {
         {/* Desktop menu */}
         <div className="flex-1 hidden md:flex justify-evenly text-white">
           <Link
-            to="home"
+            to="About"
             smooth={true}
             duration={1000}
             className="hover hover:cursor-pointer"
@@ -95,7 +95,7 @@ const Header = () => {
           <ul className="flex flex-col space-y-4 text-center">
             <li>
               <Link
-                to="home"
+                to="About"
                 smooth={true}
                 duration={1000}
                 className="text-white hover:border-b-2 border-customcolor hover:cursor-pointer"

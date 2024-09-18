@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FaLink } from "react-icons/fa";
 const ProjectCard = ({ image, video, title, liveLink }) => {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -32,14 +33,16 @@ const ProjectCard = ({ image, video, title, liveLink }) => {
       <h3 className="text-xl font-bold mt-4">{title}</h3>
 
       {/* Live Demo Button */}
-      <a
-        href={liveLink}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-block bg-customcolor text-black mt-4 py-2 px-4 rounded-lg font-semibold hover:bg-customcolor2 transition"
-      >
-        Live Demo
-      </a>
+      <div>
+        <a
+          href={liveLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center bg-customcolor text-black mt-4 py-2 px-4 rounded-lg font-semibold hover:bg-customcolor2 transition"
+        >
+          <FaLink className="mr-2" /> Live Demo
+        </a>
+      </div>
     </div>
   );
 };
