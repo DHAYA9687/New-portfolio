@@ -89,7 +89,7 @@ const TechStack = () => {
       <ul className="list-none text-lg sm:text-xl">
         <li>Bachelor of Information Technology</li>
         <li>in Rajalakshmi Engineering College</li>
-        <li>Thandalam,chennai</li>
+        <li>Thandalam,chennai.</li>
       </ul>
     </div>
   );
