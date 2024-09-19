@@ -38,7 +38,7 @@ const Landing = () => {
         <img
           src={img1}
           alt="Profile"
-          className="w-full h-full sm:m-4 rounded-full  hover:rounded-md hover:scale-110 hover:bg-customcolor object-cover border-4 border-customcolor shadow-lg transition-all duration-500 linear"
+          className="w-full h-full sm:m-4 rounded-full  hover:rounded-md hover:scale-110 hover:bg-customcolor object-cover  object-center border-4 border-customcolor shadow-lg transition-all duration-500 linear"
         />
       </div>
       {/* Left Side Content */}
