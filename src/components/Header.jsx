@@ -2,6 +2,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
+import img1 from "../assets/DS logo2.png";
 const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const handleClick = () => {
@@ -26,9 +27,14 @@ const Header = () => {
   return (
     <div className="sticky top-0 z-10">
       <div className="flex font-bold bg-black items-center p-4 font-poppins transition duration-200 ease-linear">
-        <div className="flex-1 text-4xl">
+        <div className="flex-1 flex items-center text-4xl pl-10">
+          <img
+            src={img1}
+            alt="logo"
+            className="w-12 h-12 bg-white rounded-full"
+          />
           <a
-            className="text-white pl-10 text-3xl"
+            className="text-white pl-1 text-3xl"
             href="https://github.com/DHAYA9687"
             target="_blank"
             rel="noopener noreferrer"
@@ -43,7 +49,7 @@ const Header = () => {
             to="About"
             smooth={true}
             duration={1000}
-            className="hover hover:cursor-pointer"
+            className="hover hover:cursor-pointer "
           >
             <h4 className="text-white">About</h4>
           </Link>
