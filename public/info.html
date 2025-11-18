@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Load Balancer Test - Instance A</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; background-color: #fce4ec; } /* Light Pink */
+        .info-box { border: 3px solid #e91e63; background-color: #f8bbd0; padding: 25px; margin: 20px auto; display: inline-block; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+        h1 { color: #880e4f; }
+        .instance-label { font-size: 2em; font-weight: bold; color: #d81b60; margin-bottom: 15px; }
+        .ip-data { font-size: 1.2em; text-align: left; margin-top: 15px; }
+        .ip-label { font-weight: bold; color: #4a148c; }
+        .ip-value { color: #e74c3c; }
+    </style>
+</head>
+<body>
+
+    <h1>✅ Request Served Successfully!</h1>
+    <p>Refresh the page multiple times to see the Load Balancer shift traffic.</p>
+
+    <div class="info-box">
+        <div class="instance-label">
+            SERVING FROM: INSTANCE A
+        </div>
+        <hr>
+        <div class="ip-data">
+            <span class="ip-label">Server Description:</span> 
+            <span class="ip-value">Web Server 1 (172.31.12.82)</span>
+            <br><br>
+            <!-- <span class="ip-label">Client Public IP:</span> 
+            <div id="ipAddress" class="ip-value">Loading client IP...</div> -->
+        </div>
+    </div>
+
+    <script>
+        // Fetching the Client's Public IP using a public API
+        document.addEventListener('DOMContentLoaded', () => {
+            const ipDisplay = document.getElementById('ipAddress');
+            fetch('https://api.ipify.org?format=json')
+                .then(response => response.json())
+                .then(data => {
+                    ipDisplay.textContent = data.ip;
+                })
+                .catch(error => {
+                    ipDisplay.textContent = 'Failed to retrieve IP.';
+                });
+        });
+    </script>
+
+</body>
+</html>
